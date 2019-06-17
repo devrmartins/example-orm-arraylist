@@ -36,17 +36,17 @@ class Ponto
         $this->ano = $ano;
     }
 
-    public function getAno() : string
+    public function getAno() : ?string
     {
         return $this->ano;
     }
 
-    public function setValor(decimal $valor) : void
+    public function setValor(float $valor) : void
     {
         $this->valor = $valor;
     }
 
-    public function getValor() : decimal
+    public function getValor() : float
     {
         return $this->valor;
     }
