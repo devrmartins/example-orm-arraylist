@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  app_web:
+    build: 
+      context: ./docker/web
+      dockerfile: Dockerfile
+    container_name: app_server
+    ports:
+      - 8080:80
+    volumes:
+      - .:/var/www
+      - ./docker/web/logs:/var/log/apache2
+    depends_on:
+      - app_db
+
+  app_db:
+    image: mysql:5.5
+    container_name: app_database
+    volumes:
+      - "mysql_data:/var/lib/mysql"
+      - ./docker/db/initial_data:/docker-entrypoint-initdb.d
+    ports:
+      - 3306:3306
+    restart: always
+    environment:
+      MYSQL_DATABASE: app
+      MYSQL_ROOT_PASSWORD: 123456
+
+volumes:
+  mysql_data: { driver: local }
