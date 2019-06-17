@@ -1,1 +1,5 @@
 172.31.0.1 - - [17/Jun/2019:12:39:34 +0000] "GET / HTTP/1.1" 200 374 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0"
+172.31.0.1 - - [17/Jun/2019:13:19:30 +0000] "GET / HTTP/1.1" 500 182578 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0"
+172.31.0.1 - - [17/Jun/2019:13:19:32 +0000] "GET /favicon.ico HTTP/1.1" 404 281 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0"
+172.31.0.1 - - [17/Jun/2019:13:20:25 +0000] "GET / HTTP/1.1" 200 247 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0"
+172.31.0.1 - - [17/Jun/2019:13:20:38 +0000] "GET / HTTP/1.1" 200 257 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0"
