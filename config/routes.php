@@ -33,5 +33,6 @@ use Zend\Expressive\MiddlewareFactory;
  * );
  */
 return function (Application $app, MiddlewareFactory $factory, ContainerInterface $container) : void {
-    $app->get('/', App\Handler\HomeHandler::class, 'home');
+    $app->get('/example', App\Handler\ExampleHandler::class, 'example');
+    $app->get('[/]', App\Handler\HomeHandler::class, 'home');
 };

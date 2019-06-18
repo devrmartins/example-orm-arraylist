@@ -13,6 +13,7 @@ return [
     'dependencies' => [
         'factories' => [
             App\Handler\HomeHandler::class => App\Handler\HomeHandlerFactory::class,
+            App\Handler\PerformanceHandler::class => App\Handler\PerformanceHandlerFactory::class,
         ],
     ],
 ];

@@ -40,6 +40,7 @@ class ConfigProvider
             'factories'  => [
                 EntityManager::class => EntityManagerFactory::class,
                 Handler\HomeHandler::class => Handler\HomeHandlerFactory::class,
+                Handler\ExampleHandler::class => Handler\ExampleHandlerFactory::class,
             ],
         ];
     }
